@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/javascripts/script.js" defer></script>
+  </head>
+  <body>
+    <div class="mongo-container">
+      <h1>Mongo Notes</h1>
+      <div>
+        <form class="form-container">
+          <input type="text" id="note-input" placeholder="Enter a note" />
+          <button id="add-note-btn">Add Note</button>
+        </form>
+        <ul id="mongo-notes-list"></ul>
+      </div>
+    </div>
+
+    <div class="pg-container">
+      <h1>PG Notes</h1>
+      <div>
+        <form class="form-container">
+          <input
+            type="text"
+            id="note-input"
+            placeholder="Enter a note"
+            name="note"
+          />
+          <button type="submit" id="add-note-btn">Add Note</button>
+        </form>
+        <ul id="pg-notes-list"></ul>
+      </div>
+
+      <div id="edit-modal" class="modal">
+        <div class="modal-content">
+          <form class="form-container">
+            <input
+              type="text"
+              id="edit-note-input"
+              placeholder="Edit your note"
+            />
+            <button id="add-note-btn">Save Note</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
